@@ -46,10 +46,6 @@
   align-items: center;
   gap: 5px;
 
-  color: white;
-  height: 40px;
-  margin: auto;
-
   border-radius: 6px;
   padding: 9px 16px 9px 16px;
 }
@@ -59,13 +55,16 @@
   color: var(--text-color)
 }
 
-.active{
-  background-color: rgba(115, 103, 240, 1);
-}
-
 .dashboard-left-icon{
   width: 22px;
   aspect-ratio: 1 / 1;
+  stroke: var(--text-color)
+}
+
+.dashboard-left-icon .point-point{
+  width: 20px;
+  aspect-ratio: 1 / 1;
+
 }
 
 #dashboard-add-text{
@@ -83,5 +82,14 @@
 
 #dashboard-dropdown-icon{
   width: 18px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1;  
+}
+
+.active{
+  color: white;
+  background-color: rgba(115, 103, 240, 1);
+}
+
+.active svg{
+  stroke: white;
 }

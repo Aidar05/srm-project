@@ -26,9 +26,9 @@
 
       </div>
 
-      <DashboardElement dashboard-text='dashboardTextOne' class="active" />
+      <DashboardElement :dashboard_text='dashboardTextOne' class="active" />
 
-      <DashboardElement :dashboard-text=dashboardTextTwo />
+      <DashboardElement :dashboard_text=dashboardTextTwo />
     </div>
   </div>
 
