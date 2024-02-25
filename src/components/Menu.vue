@@ -6,8 +6,8 @@
       <span id="logo-text">AlloMaster</span>
     </div>
 
-    <div id="dashboard">
-      <div class="dashboard-element" id="dashboard-add">  
+    <div class="menu-container" id="dashboard">
+      <!-- <div class="menu-element" id="dashboard-add">  
         <svg class="dashboard-left-icon" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12.5" cy="12" r="9" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
           <circle cx="12.5" cy="12" r="9" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
@@ -24,26 +24,29 @@
           <path d="M4.5 6.75L9 11.25L13.5 6.75" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
 
-      </div>
+      </div> -->
 
-      <DashboardElement :dashboard_text='dashboardTextOne' class="active" />
+      <MenuElement :dashboard_text='dashboardTextAdd' icon="circle-plus" id="dashboard-add" />
 
-      <DashboardElement :dashboard_text=dashboardTextTwo />
+      <MenuElement :dashboard_text='dashboardTextOne' icon="point" class="active" />
+
+      <MenuElement :dashboard_text=dashboardTextTwo icon="point"/>
     </div>
   </div>
 
 </template>
 
 <script>
-import DashboardElement from "./MenuComponents/DashboardElement.vue"
+import MenuElement from "./MenuComponents/MenuElement.vue"
 
 export default{
   name: "Menu",
   components: {
-    DashboardElement
+    MenuElement
   }, 
   data() {
     return {
+      dashboardTextAdd: "Добавить",
       dashboardTextOne: "Новый ремонт",
       dashboardTextTwo: "Новая продажа"
     }
