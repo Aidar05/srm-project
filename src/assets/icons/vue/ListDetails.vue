@@ -1,0 +1,16 @@
+<template>
+  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.9167 4.58333H19.2501" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9167 4.58333H19.2501" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9167 8.25002H16.5001" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9167 8.25002H16.5001" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9167 13.75H19.2501" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9167 13.75H19.2501" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9167 17.4166H16.5001" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9167 17.4166H16.5001" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="2.75" y="3.66669" width="5.5" height="5.5" rx="1" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="2.75" y="3.66669" width="5.5" height="5.5" rx="1" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="2.75" y="12.8333" width="5.5" height="5.5" rx="1" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="2.75" y="12.8333" width="5.5" height="5.5" rx="1" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</template>

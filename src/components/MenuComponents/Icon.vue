@@ -11,7 +11,7 @@ export default {
   computed: {
     dynamicComponent() {
       const name = this.name;
-      return defineAsyncComponent(() => import(`../../assets/icons/${name}.vue`));    
+      return defineAsyncComponent(() => import(`../../assets/icons/vue/${name}.vue`));    
     },
   },
 };
