@@ -1,9 +1,10 @@
 <template>
   <div class="menu-element">  
-    <Icon class="dashboard-left-icon" :name="icon" />
+    <Icon class="menu-left-icon" :name="icon" />
 
-    <span class="dashboard-element-text">{{ menu_text }}</span>
+    <span class="menu-element-text">{{ menuText }}</span>
 
+    <Icon class="menu-right-icon" :name="rightIcon" v-if="showRightIcon"/>
   </div>
 
 </template>
@@ -17,12 +18,15 @@ export default {
     Icon
   },
   props: {
-    menu_text: String,
+    menuText: String,
     icon: String,
+    rightIcon: String,
+    showRightIcon: Boolean,
   }
 }
 </script>
 
 <style>
 @import url("../../assets/css/menu.css");
+
 </style>

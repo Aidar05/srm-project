@@ -1,11 +1,11 @@
 <template>
   <div class="menu-container">
-    <div class="menu-container-header">
+    <div class="menu-container-header" v-if="menuHeader !== ''">
       <span>{{ menuHeader }}</span>
     </div>
 
     <MenuElement v-for="(item, index) in menuItems" :key="index"
-      :menu_text="item.text" :icon="item.icon"/>
+      :menuText="item.text" :icon="item.icon" :showRightIcon="item.showRightIcon" :rightIcon="'Badge'"/>
   </div>
 </template>
 
@@ -20,7 +20,8 @@ export default{
   },
   props: {
     menuHeader: String,
-    menuItems: Array
-  }
+    menuItems: Array,
+    dropdownIcon: String,
+  } 
 }
 </script>

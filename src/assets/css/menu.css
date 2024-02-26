@@ -59,30 +59,32 @@
   padding: 9px 16px 9px 16px;
 }
 
+.menu-element:hover{
+  opacity: .8;
+}
+
 #dashboard-add{
   background-color: rgba(75, 70, 92, 0.04);
   color: var(--text-color)
 }
 
-.dashboard-left-icon{
+.menu-left-icon{
   width: 22px;
   aspect-ratio: 1 / 1;
 }
 
-.dashboard-left-icon .point-point{
+.menu-left-icon .point-point{
   width: 20px;
   aspect-ratio: 1 / 1;
-
 }
 
-#dashboard-add span{
+.menu-right-icon{
+  width: 22px;
+  aspect-ratio: 1 / 1;
+}
+
+.menu-element-text{
   width: 144px;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 22px;
-}
-
-.dashboard-element-text{
   font-size: 15px;
   font-weight: 400;
   line-height: 22px;

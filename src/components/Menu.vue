@@ -6,42 +6,15 @@
       <span id="logo-text">AlloMaster</span>
     </div>
 
-    <DashboardContainer />
+    <MenuContainer menuHeader="" :menuItems="dashboardContainer" :dropdownIcon="'ChevronDown'"/>      
 
-    <MenuContainer menuHeader="Основное" :menuItems="[
-        {text: 'Главная', icon: 'HomeTwo'},
-        {text: 'Сервис', icon: 'Tool'},
-        {text: 'Магазин', icon:'ShoppingCart'},
-        {text: 'Задачи', icon: 'ListDetails'},
-        {text: 'Записи', icon: 'ListCheck'},
-        {text: 'Финансы', icon: 'FileDollar'},
-        {text: 'Склад', icon: 'BuildingWarehouse'},
-        {text: 'Заказы', icon: 'Package'}
-      ]"/>
+    <MenuContainer menuHeader="Основное" :menuItems="mainContainer"/>      
 
-    <MenuContainer menuHeader="Справочники" :menuItems="[
-        {text: 'Клиенты', icon: 'Users'},
-        {text: 'Устройства', icon: 'ColorSwatch'},
-        {text: 'Товары', icon:'Box'},
-        {text: 'Услуги', icon: 'LayoutTwo'},
-        {text: 'Другое', icon: 'MenuTwo'}
-      ]"/> 
+    <MenuContainer menuHeader="Справочники" :menuItems="referencesContainer"/> 
 
-    <MenuContainer menuHeader="Отчеты" :menuItems="[
-        {text: 'Должники', icon: 'UserMinus'},
-        {text: 'Кредиторы', icon: 'UserPlus'},
-        {text: 'Движение товара', icon:'Replace'},
-        {text: 'Расход товара', icon: 'TransferOut'},
-        {text: 'По продажам', icon: 'FileDollar'},
-        {text: 'По сервису', icon: 'FileAnalytics'},
-        {text: 'По сотрудникам', icon: 'User'},
-      ]"/>
+    <MenuContainer menuHeader="Отчеты" :menuItems="reportsContainer"/>
 
-    <MenuContainer menuHeader="Параметры" :menuItems="[
-        {text: 'Настройки', icon: 'Settings'},
-        {text: 'База данных', icon: 'Database'},
-        {text: 'SQL commands', icon:'BrandTabler'}
-      ]"/>
+    <MenuContainer menuHeader="Параметры" :menuItems="settingsContainer"/>
   </div>
 
 </template>
@@ -56,7 +29,47 @@ export default{
   components: {
     DashboardContainer, MenuContainer,
     Icon
-}
+  },
+  data() {
+    return{
+      mainContainer: [
+        {text: 'Главная', icon: 'HomeTwo', showRightIcon: false},
+        {text: 'Сервис', icon: 'Tool', showRightIcon: false},
+        {text: 'Магазин', icon:'ShoppingCart', showRightIcon: false},
+        {text: 'Задачи', icon: 'ListDetails', showRightIcon: true},
+        {text: 'Записи', icon: 'ListCheck', showRightIcon: true},
+        {text: 'Финансы', icon: 'FileDollar', showRightIcon: false},
+        {text: 'Склад', icon: 'BuildingWarehouse', showRightIcon: false},
+        {text: 'Заказы', icon: 'Package', showRightIcon: true}
+      ], 
+      referencesContainer: [
+        {text: 'Клиенты', icon: 'Users', showRightIcon: false},
+        {text: 'Устройства', icon: 'ColorSwatch', showRightIcon: false},
+        {text: 'Товары', icon:'Box', showRightIcon: false},
+        {text: 'Услуги', icon: 'LayoutTwo', showRightIcon: true},
+        {text: 'Другое', icon: 'MenuTwo', showRightIcon: false}
+      ],
+      reportsContainer: [
+        {text: 'Должники', icon: 'UserMinus', showRightIcon: false},
+        {text: 'Кредиторы', icon: 'UserPlus', showRightIcon: true},
+        {text: 'Движение товара', icon:'Replace', showRightIcon: false},
+        {text: 'Расход товара', icon: 'TransferOut', showRightIcon: false},
+        {text: 'По продажам', icon: 'FileDollar', showRightIcon: true},
+        {text: 'По сервису', icon: 'FileAnalytics', showRightIcon: false},
+        {text: 'По сотрудникам', icon: 'User', showRightIcon: false},
+      ], 
+      settingsContainer: [
+        {text: 'Настройки', icon: 'Settings', showRightIcon: false },
+        {text: 'База данных', icon: 'Database', showRightIcon: false},
+        {text: 'SQL commands', icon:'BrandTabler', showRightIcon: false}
+      ],
+      dashboardContainer: [
+      {text: 'Добавить', icon: 'CirclePlus', showRightIcon: true},
+      {text: 'Новый ремонт', icon: 'Point', showRightIcon: false},
+      {text: 'Новая продажа', icon:'Point', showRightIcon: false}
+      ]
+    }
+  }
 }
 </script>
 

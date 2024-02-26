@@ -1,9 +1,8 @@
 <template>
   <div class="menu-element">  
-    <Icon class="dashboard-left-icon" :name="icon" />
+    <Icon class="menu-left-icon" :name="icon" />
 
-    <span class="dashboard-element-text">{{ dashboard_text }}</span>
-
+    <span class="menu-element-text">{{ dashboard_text }}</span>
     <slot id="dashboard-dropdown-icon"></slot>
   </div>
 
