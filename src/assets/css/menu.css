@@ -1,8 +1,6 @@
 #left-menu{
   width: 260px;
-  height: 100%;
-
-  background-color: var(--bg-color);
+  background-color: var(--container-bg-color);
   position: absolute;
   left: 0;
 }
@@ -18,13 +16,6 @@
   gap: 10px;
 }
 
-#logo{
-  width: 34px;
-  aspect-ratio: 1 / 1;
-  background-color: black;
-  border-radius: 20%;
-}
-
 #logo-text{
   width: 184px;
   font-size: 22px;
@@ -33,12 +24,30 @@
   color: var(--text-color);
 }
 
-/* Стили dashboard и его элементов */
-#dashboard{
+/* Стили всего остального в меню и его элементов */
+.menu-container{
   display: flex;
   flex-direction: column;
   gap: 4px;
   padding: 0px 14px 0px 14px;
+}
+
+#dashboard{
+  height: 128px;
+}
+
+.menu-container-header{
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding-left: 16px;
+}
+
+.menu-container-header span{
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  opacity: .85;
 }
 
 .menu-element{  
@@ -91,5 +100,5 @@
 }
 
 .active svg{
-  stroke: white;
+  stroke: white !important;
 }

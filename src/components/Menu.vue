@@ -1,7 +1,7 @@
 <template>
   <div id="left-menu">
     <div id="logo-container">
-      <div id="logo"></div>      
+      <Icon :name="'Logo'"/>
 
       <span id="logo-text">AlloMaster</span>
     </div>
@@ -48,13 +48,15 @@
 
 <script>
 import DashboardContainer from './MenuComponents/DashboardContainer.vue';
+import Icon from './MenuComponents/Icon.vue';
 import MenuContainer from './MenuComponents/MenuContainer.vue';
 
 export default{
   name: "Menu",
   components: {
-    DashboardContainer, MenuContainer
-  }
+    DashboardContainer, MenuContainer,
+    Icon
+}
 }
 </script>
 

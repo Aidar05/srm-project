@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-container" id="dashboard">
+  <div class="menu-container">
     <div class="menu-container-header">
       <span>{{ menuHeader }}</span>
     </div>
