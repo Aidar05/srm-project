@@ -2,8 +2,9 @@
   <div class="menu-element">  
     <Icon class="dashboard-left-icon" :name="icon" />
 
-    <span class="dashboard-element-text">{{ menu_text }}</span>
+    <span class="dashboard-element-text">{{ dashboard_text }}</span>
 
+    <slot id="dashboard-dropdown-icon"></slot>
   </div>
 
 </template>
@@ -12,12 +13,12 @@
 import Icon from './Icon.vue';
 
 export default {
-  name: "MenuElement",
+  name: "DashboardElement",
   components: {
     Icon
   },
   props: {
-    menu_text: String,
+    dashboard_text: String,
     icon: String,
   }
 }

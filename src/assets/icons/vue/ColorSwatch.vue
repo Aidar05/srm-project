@@ -1,0 +1,12 @@
+<template>
+  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.4167 2.75H13.7501C12.7376 2.75 11.9167 3.57081 11.9167 4.58333V15.5833C11.9167 17.6084 13.5584 19.25 15.5834 19.25C17.6085 19.25 19.2501 17.6084 19.2501 15.5833V4.58333C19.2501 3.57081 18.4293 2.75 17.4167 2.75" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M17.4167 2.75H13.7501C12.7376 2.75 11.9167 3.57081 11.9167 4.58333V15.5833C11.9167 17.6084 13.5584 19.25 15.5834 19.25C17.6085 19.25 19.2501 17.6084 19.2501 15.5833V4.58333C19.2501 3.57081 18.4293 2.75 17.4167 2.75" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9166 6.73748L10.0833 4.90415C9.36734 4.18845 8.20684 4.18845 7.49093 4.90415L4.89859 7.49648C4.18289 8.2124 4.18289 9.3729 4.89859 10.0888L13.1486 18.3388" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.9166 6.73748L10.0833 4.90415C9.36734 4.18845 8.20684 4.18845 7.49093 4.90415L4.89859 7.49648C4.18289 8.2124 4.18289 9.3729 4.89859 10.0888L13.1486 18.3388" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.69167 11.9167H4.58333C3.57081 11.9167 2.75 12.7375 2.75 13.75V17.4167C2.75 18.4292 3.57081 19.25 4.58333 19.25H15.5833" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.69167 11.9167H4.58333C3.57081 11.9167 2.75 12.7375 2.75 13.75V17.4167C2.75 18.4292 3.57081 19.25 4.58333 19.25H15.5833" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.5833 15.5833V15.5925" stroke="#4B465C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.5833 15.5833V15.5925" stroke="white" stroke-opacity="0.2" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</template>
