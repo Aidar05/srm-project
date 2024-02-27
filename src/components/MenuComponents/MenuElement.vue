@@ -1,5 +1,5 @@
 <template>
-  <div class="menu-element">  
+  <div class="menu-element" :class=" {active: isActive} ">  
     <Icon class="menu-left-icon" :name="icon" />
 
     <span class="menu-element-text">{{ menuText }}</span>
@@ -22,6 +22,7 @@ export default {
     icon: String,
     rightIcon: String,
     showRightIcon: Boolean,
+    isActive: Boolean,
   }
 }
 </script>
@@ -30,3 +31,4 @@ export default {
 @import url("../../assets/css/menu.css");
 
 </style>
+

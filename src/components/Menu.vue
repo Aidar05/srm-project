@@ -15,60 +15,59 @@
     <MenuContainer menuHeader="Отчеты" :menuItems="reportsContainer"/>
 
     <MenuContainer menuHeader="Параметры" :menuItems="settingsContainer"/>
+
   </div>
 
 </template>
 
 <script>
-import DashboardContainer from './MenuComponents/DashboardContainer.vue';
 import Icon from './MenuComponents/Icon.vue';
 import MenuContainer from './MenuComponents/MenuContainer.vue';
 
 export default{
   name: "Menu",
   components: {
-    DashboardContainer, MenuContainer,
-    Icon
+    MenuContainer, Icon
   },
   data() {
     return{
+      dashboardContainer: [
+        {text: 'Добавить', icon: 'CirclePlus', showRightIcon: true, isActive: false},
+        {text: 'Новый ремонт', icon: 'Point', showRightIcon: false, isActive: true},
+        {text: 'Новая продажа', icon:'Point', showRightIcon: false, isActive: false}
+      ],
       mainContainer: [
-        {text: 'Главная', icon: 'HomeTwo', showRightIcon: false},
-        {text: 'Сервис', icon: 'Tool', showRightIcon: false},
-        {text: 'Магазин', icon:'ShoppingCart', showRightIcon: false},
-        {text: 'Задачи', icon: 'ListDetails', showRightIcon: true},
-        {text: 'Записи', icon: 'ListCheck', showRightIcon: true},
-        {text: 'Финансы', icon: 'FileDollar', showRightIcon: false},
-        {text: 'Склад', icon: 'BuildingWarehouse', showRightIcon: false},
-        {text: 'Заказы', icon: 'Package', showRightIcon: true}
+        {text: 'Главная', icon: 'HomeTwo', showRightIcon: false, isActive: false},
+        {text: 'Сервис', icon: 'Tool', showRightIcon: false, isActive: false},
+        {text: 'Магазин', icon:'ShoppingCart', showRightIcon: false, isActive: false},
+        {text: 'Задачи', icon: 'ListDetails', showRightIcon: true, isActive: false},
+        {text: 'Записи', icon: 'ListCheck', showRightIcon: true, isActive: false},
+        {text: 'Финансы', icon: 'FileDollar', showRightIcon: false, isActive: false},
+        {text: 'Склад', icon: 'BuildingWarehouse', showRightIcon: false, isActive: false},
+        {text: 'Заказы', icon: 'Package', showRightIcon: true, isActive: false}
       ], 
       referencesContainer: [
-        {text: 'Клиенты', icon: 'Users', showRightIcon: false},
-        {text: 'Устройства', icon: 'ColorSwatch', showRightIcon: false},
-        {text: 'Товары', icon:'Box', showRightIcon: false},
-        {text: 'Услуги', icon: 'LayoutTwo', showRightIcon: true},
-        {text: 'Другое', icon: 'MenuTwo', showRightIcon: false}
+        {text: 'Клиенты', icon: 'Users', showRightIcon: false, isActive: false},
+        {text: 'Устройства', icon: 'ColorSwatch', showRightIcon: false, isActive: false},
+        {text: 'Товары', icon:'Box', showRightIcon: false, isActive: false},
+        {text: 'Услуги', icon: 'LayoutTwo', showRightIcon: true, isActive: false},
+        {text: 'Другое', icon: 'MenuTwo', showRightIcon: false, isActive: false}
       ],
       reportsContainer: [
-        {text: 'Должники', icon: 'UserMinus', showRightIcon: false},
-        {text: 'Кредиторы', icon: 'UserPlus', showRightIcon: true},
-        {text: 'Движение товара', icon:'Replace', showRightIcon: false},
-        {text: 'Расход товара', icon: 'TransferOut', showRightIcon: false},
-        {text: 'По продажам', icon: 'FileDollar', showRightIcon: true},
-        {text: 'По сервису', icon: 'FileAnalytics', showRightIcon: false},
-        {text: 'По сотрудникам', icon: 'User', showRightIcon: false},
+        {text: 'Должники', icon: 'UserMinus', showRightIcon: false, isActive: false},
+        {text: 'Кредиторы', icon: 'UserPlus', showRightIcon: true, isActive: false},
+        {text: 'Движение товара', icon:'Replace', showRightIcon: false, isActive: false},
+        {text: 'Расход товара', icon: 'TransferOut', showRightIcon: false, isActive: false},
+        {text: 'По продажам', icon: 'FileDollar', showRightIcon: true, isActive: false},
+        {text: 'По сервису', icon: 'FileAnalytics', showRightIcon: false, isActive: false},
+        {text: 'По сотрудникам', icon: 'User', showRightIcon: false, isActive: false},
       ], 
       settingsContainer: [
-        {text: 'Настройки', icon: 'Settings', showRightIcon: false },
-        {text: 'База данных', icon: 'Database', showRightIcon: false},
-        {text: 'SQL commands', icon:'BrandTabler', showRightIcon: false}
-      ],
-      dashboardContainer: [
-      {text: 'Добавить', icon: 'CirclePlus', showRightIcon: true},
-      {text: 'Новый ремонт', icon: 'Point', showRightIcon: false},
-      {text: 'Новая продажа', icon:'Point', showRightIcon: false}
+        {text: 'Настройки', icon: 'Settings', showRightIcon: false, isActive: false},
+        {text: 'База данных', icon: 'Database', showRightIcon: false, isActive: false},
+        {text: 'SQL commands', icon:'BrandTabler', showRightIcon: false, isActive: false}
       ]
-    }
+    } 
   }
 }
 </script>

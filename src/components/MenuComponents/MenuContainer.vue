@@ -5,7 +5,7 @@
     </div>
 
     <MenuElement v-for="(item, index) in menuItems" :key="index"
-      :menuText="item.text" :icon="item.icon" :showRightIcon="item.showRightIcon" :rightIcon="'Badge'"/>
+      :menuText="item.text" :icon="item.icon" :showRightIcon="item.showRightIcon" :rightIcon="'Badge'" :isActive="item.isActive"/>
   </div>
 </template>
 
