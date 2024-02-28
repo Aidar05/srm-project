@@ -13,22 +13,9 @@ body{
   background-color: var(--body-bg-color);
 }
 
-#header-container{
-  height: 98px;
-}
-
-#header{
-  height: 60px;
-  background-color: rgb(65, 65, 65);
-}
-
-#nav-tabs{
-  height: 38px;
-  background-color: rgb(88, 88, 88);
-}
-
-#content{
-  height: 700px;
+/* #content{
   background-color: rgb(53, 52, 52);
+  height: 700px;
+  margin-left: 260px;
 }
-
+ */

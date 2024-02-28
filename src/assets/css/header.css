@@ -1,0 +1,53 @@
+#header-container{
+  height: 98px;
+  margin-left: 260px;
+  background-color: var(--container-bg-color);
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+#header-left-contaienr{
+  display: flex;
+  align-items: center;
+  gap: 20px
+}
+
+#indent-decrease{
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.filials-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  
+  width: 156px;
+  height: 38px;
+  border-radius: 6px;
+  background-color: rgba(115, 103, 240, 0.08);
+}
+
+.filials-button span{
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: rgba(115, 103, 240, 1)
+}
+
+#filials-dropdown{
+  stroke: rgba(115, 103, 240, 1) !important;
+}
+
+
+
+#nav-tabs{
+  height: 38px;
+  border-bottom: 1px solid rgba(219, 218, 222, 1);
+}
