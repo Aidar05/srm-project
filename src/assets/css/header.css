@@ -46,6 +46,23 @@
 }
 
 
+.exchange-rate{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  column-gap: 15px; 
+}
+
+#currency-element svg{
+  width: 20px;
+  height: 20px;
+}
+
+#currency-value{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+}
 
 #nav-tabs{
   height: 38px;

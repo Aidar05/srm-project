@@ -12,6 +12,13 @@
           <Icon id="filials-dropdown" :name="'ChevronDown'"/>
         </div>
       </div>
+
+      <div id="header-right-container">
+        <div class="exchange-rate">
+          <CurrencyElement v-for="(item, index) in exchangeRate" :key="index"
+            :icon="item.icon" :currencyValue="item.currencyValue"/>
+        </div>        
+      </div>
     </div>
 
     <div id="nav-tabs"></div>
@@ -24,11 +31,22 @@
 
 <script>
 import Icon from './MenuComponents/Icon.vue';
+import CurrencyElement from "./HeaderComponents/CurrencyElement.vue"
 
 export default{
   name: "Header",
   components: {
-    Icon
+    Icon, CurrencyElement
+  },
+  data() {
+    return {
+      exchangeRate: [
+        {icon: "CurrencyDollar", currencyValue: "54.82"},
+        {icon: "CurrencyEuro", currencyValue: "54.82"},
+        {icon: "CurrencyRubel", currencyValue: "54.82"},
+        {icon: "CurrencyYen", currencyValue: "54.82"},
+      ]
+    }
   }
 }
 </script>

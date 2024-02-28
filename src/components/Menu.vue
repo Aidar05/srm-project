@@ -6,7 +6,7 @@
       <span id="logo-text">AlloMaster</span>
     </div>
 
-    <MenuContainer menuHeader="" :menuItems="dashboardContainer" :dropdownIcon="'ChevronDown'"/>      
+    <MenuContainer menuHeader="" :menuItems="dashboardContainer"/>      
 
     <MenuContainer menuHeader="Основное" :menuItems="mainContainer"/>      
 
