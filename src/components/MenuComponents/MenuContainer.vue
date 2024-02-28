@@ -4,8 +4,8 @@
       <span>{{ menuHeader }}</span>
     </div>
 
-    <MenuElement v-for="(item, index) in menuItems" :key="index"
-      :menuText="item.text" :icon="item.icon" :showRightIcon="item.showRightIcon" :rightIcon="'Badge'" :isActive="item.isActive"/>
+    <MenuElement v-for="(item, index) in menuItems" :key="index" :menuText="item.text" :icon="item.icon"
+     :showRightIcon="item.showRightIcon" :rightIcon="item.rightIcon ? item.rightIcon : 'Badge'" :isActive="item.isActive"/>
   </div>
 </template>
 

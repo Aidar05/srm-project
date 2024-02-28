@@ -15,7 +15,6 @@
     <MenuContainer menuHeader="Отчеты" :menuItems="reportsContainer"/>
 
     <MenuContainer menuHeader="Параметры" :menuItems="settingsContainer"/>
-
   </div>
 
 </template>
@@ -32,7 +31,7 @@ export default{
   data() {
     return{
       dashboardContainer: [
-        {text: 'Добавить', icon: 'CirclePlus', showRightIcon: true, isActive: false},
+        {text: 'Добавить', icon: 'CirclePlus', showRightIcon: true, isActive: false, rightIcon: "ChevronDown"},
         {text: 'Новый ремонт', icon: 'Point', showRightIcon: false, isActive: true},
         {text: 'Новая продажа', icon:'Point', showRightIcon: false, isActive: false}
       ],
