@@ -5,10 +5,9 @@
 </template>
 
 <script>
-import IndentDeacrease from "@/assets/icons/vue/IndentDeacrease.vue";
 import Menu from "../components/Menu.vue"
-import Icon from "@/components/MenuComponents/Icon.vue";
 import Header from "@/components/Header.vue";
+import Icon from "@/components/MenuComponents/Icon.vue";
 
 export default{
   name: "FinancesView",
@@ -19,5 +18,5 @@ export default{
 </script>
 
 <style>
-@import url("../assets/css/header.css")
+@import url("../assets/css/header.css");
 </style>
