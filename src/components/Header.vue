@@ -1,19 +1,10 @@
 <template>
   <div id="header-container">
     <div id="header">
-      <div class="header-inner-container" id="header-left-contaienr">
-        <Icon id="indent-decrease" :name="'IndentDeacrease'"/>
-      
-        <div class="filials-button">
-          <Icon :name="'SmartHome'"/>
-        
-          <span>Филиалы</span>
+      <HeaderLeftCont />
 
-          <Icon id="filials-dropdown" :name="'ChevronDown'"/>
-        </div>
-      </div>
-
-      <div class="header-inner-container" id="header-right-container">
+      <HeaderRightCont :exchangeRate="exchangeRate" :finInfo="finInfo"/>
+      <!-- <div class="header-inner-container" id="header-right-container">
         <div class="exchange-rate">
           <CurrencyElement v-for="(item, index) in exchangeRate" :key="index"
             :icon="item.icon" :currencyValue="item.currencyValue"/>
@@ -23,7 +14,7 @@
           <FinInfoElement v-for="(item, index) in finInfo" :key="index" :icon="item.icon"
             :text="item.icon" :value="item.value" :bgColor="item.bgColor ? item.bgColor : 'default'"/>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <div id="nav-tabs"></div>
@@ -35,14 +26,14 @@
 </template>
 
 <script>
+import HeaderLeftCont from './HeaderComponents/HeaderLeftCont.vue';
+import HeaderRightCont from './HeaderComponents/HeaderRightCont.vue';
 import Icon from './MenuComponents/Icon.vue';
-import CurrencyElement from "./HeaderComponents/CurrencyElement.vue"
-import FinInfoElement from './HeaderComponents/FinInfoElement.vue';
 
 export default{
   name: "Header",
   components: {
-    Icon, CurrencyElement, FinInfoElement
+    Icon, HeaderLeftCont, HeaderRightCont
   },
   data() {
     return {
