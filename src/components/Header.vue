@@ -3,18 +3,7 @@
     <div id="header">
       <HeaderLeftCont />
 
-      <HeaderRightCont :exchangeRate="exchangeRate" :finInfo="finInfo"/>
-      <!-- <div class="header-inner-container" id="header-right-container">
-        <div class="exchange-rate">
-          <CurrencyElement v-for="(item, index) in exchangeRate" :key="index"
-            :icon="item.icon" :currencyValue="item.currencyValue"/>
-        </div>       
-        
-        <div id="fin-info-container">
-          <FinInfoElement v-for="(item, index) in finInfo" :key="index" :icon="item.icon"
-            :text="item.icon" :value="item.value" :bgColor="item.bgColor ? item.bgColor : 'default'"/>
-        </div>
-      </div> -->
+      <HeaderRightCont :exchangeRate="exchangeRate" :finInfo="finInfo" :iconsContainer="iconsContainer"/>
     </div>
 
     <div id="nav-tabs"></div>
@@ -48,6 +37,11 @@ export default{
         {icon: "ArrowUpRight", text: "Мы должны: ", value: "1229822", bgColor: "green"},
         {icon: "CircleUSD", text: "Касса. Наличные ", value: "+131 983"},
         {icon: "CircleUSD", text: "Касса. Безнал ", value: "+2 337 836"}
+      ], 
+      iconsContainer: [
+        {icon: "AccessPoint"},
+        {icon: "CircleUSD"},
+        {icon: "Bell"}
       ]
     }
   }

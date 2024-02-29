@@ -86,8 +86,13 @@
   max-width: 100px;
   height: 39px;
   padding: 5px 10px 5px 10px;
+  border-radius: 5px;
   background-color: rgba(115, 103, 240, 0.16);
   color: rgba(115, 103, 240, 1);
+}
+
+.default *{
+  stroke: rgba(115, 103, 240, 1);
 }
 
 .red{
@@ -117,7 +122,28 @@
   line-height: 14px;
 }
 
+
+/* Иконки и профиль */
+.header-icons-container{
+  display: flex;
+  align-items: center;
+  gap: 15px
+}
+
+.avatar-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  width: 38px;
+  aspect-ratio: 1 / 1;
+  background: rgba(115, 103, 240, 1) url("../imgs/Avatar.png");
+  border-radius: 50%;
+}
+
 #nav-tabs{
   height: 38px;
   border-bottom: 1px solid rgba(219, 218, 222, 1);
 }
+
