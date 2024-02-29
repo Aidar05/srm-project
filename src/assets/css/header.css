@@ -6,13 +6,19 @@
 
 #header{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 60px;
+  padding: 0 26px 0 26px;
 }
 
-#header-left-contaienr{
+.header-inner-container{
   display: flex;
   align-items: center;
+  gap: 20px
+}
+
+#header-right-container{
   gap: 20px
 }
 
@@ -62,6 +68,25 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 24px;
+}
+
+/* Инфа о финансах в хэдере */
+#fin-info-container{
+  display: flex;
+  gap: 10px
+}
+
+.header-fin-info{
+  width: 120px;
+  height: 49px;
+  padding: 5px 10px 5px 10px;
+  background-color: red;
+}
+
+.header-fin-info-text{
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
 }
 
 #nav-tabs{

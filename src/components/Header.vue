@@ -1,7 +1,7 @@
 <template>
   <div id="header-container">
     <div id="header">
-      <div id="header-left-contaienr">
+      <div class="header-inner-container" id="header-left-contaienr">
         <Icon id="indent-decrease" :name="'IndentDeacrease'"/>
       
         <div class="filials-button">
@@ -13,11 +13,16 @@
         </div>
       </div>
 
-      <div id="header-right-container">
+      <div class="header-inner-container" id="header-right-container">
         <div class="exchange-rate">
           <CurrencyElement v-for="(item, index) in exchangeRate" :key="index"
             :icon="item.icon" :currencyValue="item.currencyValue"/>
-        </div>        
+        </div>       
+        
+        <div id="fin-info-container">
+          <FinInfoElement v-for="(item, index) in finInfo" :key="index"
+            :icon="item.icon" :text="item.text" :value="item.value" />
+        </div>
       </div>
     </div>
 
@@ -32,11 +37,12 @@
 <script>
 import Icon from './MenuComponents/Icon.vue';
 import CurrencyElement from "./HeaderComponents/CurrencyElement.vue"
+import FinInfoElement from './HeaderComponents/FinInfoElement.vue';
 
 export default{
   name: "Header",
   components: {
-    Icon, CurrencyElement
+    Icon, CurrencyElement, FinInfoElement
   },
   data() {
     return {
@@ -45,6 +51,12 @@ export default{
         {icon: "CurrencyEuro", currencyValue: "54.82"},
         {icon: "CurrencyRubel", currencyValue: "54.82"},
         {icon: "CurrencyYen", currencyValue: "54.82"},
+      ],
+      finInfo: [
+        {icon: "ArrowDown", text: "Нам должны:", value: "808450"},
+        {icon: "ArrowUp", text: "Мы должны:", value: "1229822"},
+        {icon: "UsdCircle", text: "Касса. Наличные", value: "+131 983"},
+        {icon: "UsdCircle", text: "Касса. Безнал", value: "+2 337 836"}
       ]
     }
   }
