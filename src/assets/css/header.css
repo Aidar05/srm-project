@@ -122,7 +122,6 @@
   line-height: 14px;
 }
 
-
 /* Иконки и профиль */
 .header-icons-container{
   display: flex;
@@ -142,8 +141,34 @@
   border-radius: 50%;
 }
 
+/* Навигация, нижняя часть хэдера */
 #nav-tabs{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  /* color: var(--color-purple); */
+  color: var(--text-color);
   height: 38px;
   border-bottom: 1px solid rgba(219, 218, 222, 1);
 }
 
+.nav-element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  width: 84px;
+  height: 38px;
+  padding: 8px 20px 8px 20px;
+  border-radius: 6px 0px 0px 0px;
+}
+
+.activeNav{
+  color: var(--color-purple)
+}
+
+.activeNav *{
+  stroke: var(--color-purple);
+}

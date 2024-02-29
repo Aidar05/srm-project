@@ -3,10 +3,14 @@
     <div id="header">
       <HeaderLeftCont />
 
-      <HeaderRightCont :exchangeRate="exchangeRate" :finInfo="finInfo" :iconsContainer="iconsContainer"/>
+      <HeaderRightCont :exchangeRate="exchangeRate" :finInfo="finInfo"
+       :iconsContainer="iconsContainer"/>
     </div>
 
-    <div id="nav-tabs"></div>
+    <div id="nav-tabs">
+      <NavElement v-for="(item, index) in navContainer" :key="index"
+       :navText="item.text" :activeNav="item.activeNav"/>
+    </div>
   </div>
 
   <div id="content">
@@ -17,12 +21,13 @@
 <script>
 import HeaderLeftCont from './HeaderComponents/HeaderLeftCont.vue';
 import HeaderRightCont from './HeaderComponents/HeaderRightCont.vue';
+import NavElement from './HeaderComponents/NavElement.vue';
 import Icon from './MenuComponents/Icon.vue';
 
 export default{
   name: "Header",
   components: {
-    Icon, HeaderLeftCont, HeaderRightCont
+    Icon, HeaderLeftCont, HeaderRightCont, NavElement
   },
   data() {
     return {
@@ -42,6 +47,12 @@ export default{
         {icon: "AccessPoint"},
         {icon: "CircleUSD"},
         {icon: "Bell"}
+      ],
+      navContainer: [
+        {text: "Active", activeNav: true},
+        {text: "Links", activeNav: false},
+        {text: "Links", activeNav: false},
+        {text: "Links", activeNav: false}
       ]
     }
   }
