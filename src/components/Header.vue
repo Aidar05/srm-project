@@ -20,8 +20,8 @@
         </div>       
         
         <div id="fin-info-container">
-          <FinInfoElement v-for="(item, index) in finInfo" :key="index"
-            :icon="item.icon" :text="item.text" :value="item.value" />
+          <FinInfoElement v-for="(item, index) in finInfo" :key="index" :icon="item.icon"
+            :text="item.icon" :value="item.value" :bgColor="item.bgColor ? item.bgColor : 'default'"/>
         </div>
       </div>
     </div>
@@ -53,10 +53,10 @@ export default{
         {icon: "CurrencyYen", currencyValue: "54.82"},
       ],
       finInfo: [
-        {icon: "ArrowDown", text: "Нам должны:", value: "808450"},
-        {icon: "ArrowUp", text: "Мы должны:", value: "1229822"},
-        {icon: "UsdCircle", text: "Касса. Наличные", value: "+131 983"},
-        {icon: "UsdCircle", text: "Касса. Безнал", value: "+2 337 836"}
+        {icon: "ArrowDownRight", text: "Нам должны: ", value: "46808450", bgColor: "red"},
+        {icon: "ArrowUpRight", text: "Мы должны: ", value: "1229822", bgColor: "green"},
+        {icon: "CircleUSD", text: "Касса. Наличные ", value: "+131 983"},
+        {icon: "CircleUSD", text: "Касса. Безнал ", value: "+2 337 836"}
       ]
     }
   }
