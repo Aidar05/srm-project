@@ -1,6 +1,7 @@
 <template>
   <div class="content-main-container">
-    <ContentBtns :icon="'CirclePlus'"/>
+
+    <ContentBtns :contentIcons="contentIcons"/>
   </div>
 </template>
 
@@ -13,6 +14,15 @@ export default{
   components: {
     Icon, ContentBtns
   },
+  data() {
+    return {
+      contentIcons: [
+        {icon: "Repeat"},
+        {icon: "CirclePlus"},
+        {icon: "List"}
+      ]
+    }
+  }
 }
 </script>
 

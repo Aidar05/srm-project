@@ -6,8 +6,8 @@
 
 #header{
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   height: 60px;
   padding: 0 26px 0 26px;
 }
@@ -51,12 +51,18 @@
   stroke: rgba(115, 103, 240, 1) !important;
 }
 
-
+/* Контейнер с валютами */
 .exchange-rate{
   display: grid;
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
-  column-gap: 15px; 
+  column-gap: 20px; 
+}
+
+#currency-element{
+  display: flex;
+  align-items: center;
+  gap: 3px
 }
 
 #currency-element svg{
@@ -73,7 +79,7 @@
 /* Инфа о финансах в хэдере */
 #fin-info-container{
   display: flex;
-  gap: 10px
+  gap: 15px
 }
 
 .header-fin-info{

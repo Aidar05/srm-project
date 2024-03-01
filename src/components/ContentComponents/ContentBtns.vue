@@ -1,6 +1,10 @@
 <template>
-  <div class="content-btns">
-    <Icon :name="icon"/> 
+  <div class="content-btns-container">
+    <div class="content-btns" v-for="(item, index) in contentIcons" 
+      :key="index" >
+
+      <Icon :name="item.icon"/> 
+    </div>
   </div>
 </template>
 
@@ -13,7 +17,7 @@ export default{
     Icon
   },
   props: {
-    icon: String
+    contentIcons: Object
   }
 }
 </script>
