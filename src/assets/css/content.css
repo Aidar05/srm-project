@@ -1,5 +1,6 @@
 .content-main-container{
-  height: 60vh;
+  display: flex;
+  justify-content: space-between;
   margin-left: 280px;
   margin-top: 20px;
 }
@@ -13,6 +14,7 @@
   stroke: white;
 }
 
+/* Кнопки над таблицами */
 .content-btns{
   display: flex;
   align-items: center;
@@ -29,7 +31,7 @@
   height: 24px;
 }
 
-
+/* Таблицы */
 table{
   background-color: white;
   border: 1px solid rgba(219, 218, 222, 1);
@@ -56,4 +58,10 @@ table{
   line-height: 27px;
   padding: 0 15px 0 15px;
   color: var(--text-color);
+}
+
+.sales-map{
+  width: 152px;
+  height: 300px;
+  background-color: white;
 }
