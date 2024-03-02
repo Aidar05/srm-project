@@ -1,18 +1,22 @@
 <template>
   <div class="content-main-container">
-
     <ContentBtns :contentIcons="contentIcons"/>
+
+    <ContentTable :tableData="tableOne" />
+
+    <ContentTable :tableData="tableTwo" />
   </div>
 </template>
 
 <script>
 import Icon from './MenuComponents/Icon.vue';
 import ContentBtns from "./ContentComponents/ContentBtns.vue"
+import ContentTable from './ContentComponents/ContentTable.vue';
 
 export default{
   name: "Content",
   components: {
-    Icon, ContentBtns
+    Icon, ContentBtns, ContentTable
   },
   data() {
     return {
@@ -20,6 +24,32 @@ export default{
         {icon: "Repeat"},
         {icon: "CirclePlus"},
         {icon: "List"}
+      ],
+      tableOne: [
+        ["Дата", "Номер", "Операция", "Контрагент", "Касса", "Автор", "Комментарий", "Способ оплаты", "Сумма"], 
+        {data: "01.05.2023", id: 17487, operation: "Оплата поставщику", contragent: "ТОО Форстр", checkout: "Шаляпина",
+          author: "Макпал", comment: "Излишние", paymentMethod: "Kaspi макпал", sum: 40000, isNegative: false
+        }, 
+        {data: "01.05.2023", id: 17487, operation: "Оплата поставщику", contragent: "ТОО Форстр", checkout: "Шаляпина",
+          author: "Макпал", comment: "Излишние", paymentMethod: "Kaspi макпал", sum: 40000, isNegative: true
+        }, 
+        {data: "01.05.2023", id: 17487, operation: "Оплата поставщику", contragent: "ТОО Форстр", checkout: "Шаляпина",
+          author: "Макпал", comment: "Излишние", paymentMethod: "Kaspi макпал", sum: 40000, isNegative: false
+        }, 
+        {data: "01.05.2023", id: 17487, operation: "Оплата поставщику", contragent: "ТОО Форстр", checkout: "Шаляпина",
+          author: "Макпал", comment: "Излишние", paymentMethod: "Kaspi макпал", sum: 40000, isNegative: true
+        }, 
+        {data: "01.05.2023", id: 17487, operation: "Оплата поставщику", contragent: "ТОО Форстр", checkout: "Шаляпина",
+          author: "Макпал", comment: "Излишние", paymentMethod: "Kaspi макпал", sum: 40000, isNegative: false
+        } 
+      ], 
+      tableTwo: [
+        ["Вид оплаты", "Наличные", "Безналичные", "Всего"],
+        {paymentType: "Оплата за покупку", cash: "15 645 654", nonCash: "456 665", sum: "212 565 222"},
+        {paymentType: "Оплата за покупку", cash: "15 645 654", nonCash: "456 665", sum: "212 565 222"},
+        {paymentType: "Оплата за покупку", cash: "15 645 654", nonCash: "456 665", sum: "212 565 222"},
+        {paymentType: "Оплата за покупку", cash: "15 645 654", nonCash: "456 665", sum: "212 565 222"},
+        ["Итог", "456 665", "123 123", "4 654 456"]
       ]
     }
   }

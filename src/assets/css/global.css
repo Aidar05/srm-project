@@ -11,4 +11,6 @@ body{
   margin: 0;
   font-family: var(--font-family);
   background-color: var(--body-bg-color);
+  color: var(--text-color);
+
 }
