@@ -12,8 +12,8 @@
       <SalesMap :salesHeader="salesDataOne[0].header" :salesDates="salesDataOne[0].dates"
        :salesData="salesDataOne"/>
       
-       <SalesMap :salesHeader="salesDataTwo[0].header" :salesDates="salesDataTwo[0].dates"
-       :salesData="salesDataTwo"/>
+      <SalesMap :salesHeader="salesDataTwo[0].header" :salesDates="salesDataTwo[0].dates"
+      :salesData="salesDataTwo"/>
     </div>
 </div>
 </template>

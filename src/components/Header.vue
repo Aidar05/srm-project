@@ -12,10 +12,6 @@
        :navText="item.text" :activeNav="item.activeNav"/>
     </div>
   </div>
-
-  <div id="content">
-
-  </div>
 </template>
 
 <script>

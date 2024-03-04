@@ -31,25 +31,19 @@
   height: 24px;
 }
 
+
 /* Таблицы */
-/* table{
-  width: 100%;
+table{
   background-color: white;
   border: 1px solid rgba(219, 218, 222, 1);
-  border-collapse: separate;
-  border-spacing: 0px;
   border-radius: 6px;
   margin-top: 20px;
-} */
-
-.grid-row{
-  height: 54px;
 }
 
-/* Это для разделения между строками в таблице */
-/* table > *:not(:last-child) *{
-  border-bottom: solid 1px rgb(219, 218, 222, 1);
-} */
+.row{
+  height: 54px;
+  border: 1px solid rgb(44, 43, 46);
+}
 
 .column-names{
   font-size: 13px;
@@ -65,29 +59,9 @@
   line-height: 27px;
   padding: 0 15px 0 15px;
   color: var(--text-color);
-  text-align: center;
 }
 
-/* вторая версия */
-/* .grid-table {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  gap: 10px;
-} */
-
-.header {
-  font-weight: bold;
-}
-
-.grid-row {
-  display: contents;
-}
-
-.grid-cell {
-  padding: 10px;
-}
-
-
+/* Окошко справа */
 .sales-map{
   width: 152px;
   background-color: white;
