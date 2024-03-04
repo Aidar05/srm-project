@@ -5,7 +5,7 @@
   
       <ContentTable :tableData="tableOne" />
   
-      <ContentTable :tableData="tableTwo" />
+      <!-- <ContentTable :tableData="tableTwo" /> -->
     </div>
 
     <div class="right-content-container">
