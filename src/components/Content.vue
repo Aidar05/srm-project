@@ -9,7 +9,7 @@
     </div>
 
     <div class="right-content-container">
-      <SalesMap />
+      <SalesMap :salesHeader="salesDataOne[0].header" :salesDates="salesDataOne[0].dates" :salesData="salesDataOne"/>
     </div>
 </div>
 </template>
@@ -59,7 +59,19 @@ export default{
         ["Итог", "456 665", "123 123", "4 654 456", '']
       ],
       salesDataOne: [
-        {header: "Финансы на", dates: "15.02.2023-21.06.2023"}, 
+        {header: "Финансы на", dates: "15.02.2023-21.06.2023"},
+        {payMethod: "Наличные", name: "", icon: "ChevronUp", amount: "369 383", isProfit: true},
+        {payMethod: "Kaspi", name: "Акылжан", icon: "ChevronUp", amount: "546 596", isProfit: true},
+        {payMethod: "Kaspi", name: "Адылжан", icon: "ChevronUp", amount: "770 092", isProfit: true},
+        {payMethod: "Kaspi", name: "Мейржан", icon: "ChevronUp", amount: "17 000", isProfit: true},
+        {payMethod: "QR", name: "Diler-kz", icon: "ChevronUp", amount: "154 200", isProfit: true},
+        {payMethod: "QR", name: "Qastek", icon: "ChevronUp", amount: "339 850", isProfit: true},
+        {payMethod: "QR", name: "Sherkhan", icon: "ChevronUp", amount: "888 008", isProfit: true},
+        {payMethod: "Безналичные", name: "", icon: "ChevronUp", amount: "1 500", isProfit: false},
+        {payMethod: "Безналичные", name: "", icon: "ChevronUp", amount: "227 240", isProfit: true},
+        {payMethod: "Итого", name: "", icon: "ChevronUp", amount: "3 310 869", isProfit: true},
+        {payMethod: "Приход", name: "", amount: "0"},
+        {payMethod: "Безналичные", name: "", amount: "0"},
       ]
     }
   }
