@@ -7,8 +7,9 @@
       </div>
 
       <div class="sales-map-elements">
-        <div class="sales-map-element" v-for="(item, index) in salesData.slice(1)"
-         :key="index" :class="{ profit: item.isProfit }">
+        <div class="sales-map-element" v-for="(item, index) in salesData.slice(1)" :key="index" 
+          :class="{ isProfit: item.isProfit, nonProfit: item.isProfit !== undefined && !item.isProfit }">
+          
           <div class="sales-el-text">
             <span class="sales-el-text"> {{ item.payMethod }}
               <span class="sales-name"> {{ item.name }} </span>
