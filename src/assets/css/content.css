@@ -5,16 +5,23 @@
   margin-top: 20px;
 }
 
+.left-content-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+/* Кнопки над таблицами */
 .content-btns-container{
   display: flex;
   gap: 15px;
 }
 
+
 .content-btns-container > :nth-child(2) *{
   stroke: white;
 }
 
-/* Кнопки над таблицами */
 .content-btns{
   display: flex;
   align-items: center;
@@ -31,13 +38,30 @@
   height: 24px;
 }
 
+/* Горизонтальная группа кнопок */
+.btn-group{
+  gap: 0; 
+  color: white
+}
+
+.btn-group *{
+  border-radius: 0;
+}
+
+.btn-group > :nth-child(1){
+  border-radius: 4px 0 0 4px;
+}
+
+.btn-group > :last-child{
+  border-radius: 0 4px 4px 0;
+}
 
 /* Таблицы */
 table{
+  width: 1000px;  
   background-color: white;
   border: 1px solid rgba(219, 218, 222, 1);
   border-radius: 6px;
-  margin-top: 20px;
 }
 
 .row{
@@ -59,6 +83,7 @@ table{
   line-height: 27px;
   padding: 0 15px 0 15px;
   color: var(--text-color);
+  text-align: center;
 }
 
 /* Окошко справа */

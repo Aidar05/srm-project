@@ -3,9 +3,15 @@
     <div class="left-content-container">
       <ContentBtns :contentIcons="contentIcons"/>
   
+      <div class="contentHeader">
+        <ContentBtns :contentIcons="buttonGroup"/>
+
+        
+      </div>
+
       <ContentTable :tableData="tableOne" />
   
-      <!-- <ContentTable :tableData="tableTwo" /> -->
+      <ContentTable :tableData="tableTwo" />
     </div>
 
     <div class="right-content-container">
@@ -35,6 +41,12 @@ export default{
         {icon: "Repeat"},
         {icon: "CirclePlus"},
         {icon: "List"}
+      ],
+      buttonGroup: [
+        {text: "C"},
+        {text: "B"},
+        {text: "-"},
+        {text: "+"}
       ],
       tableOne: [
         ["Дата", "Номер", "Операция", "Контрагент", "Касса", "Автор", "Комментарий", "Способ оплаты", "Сумма"], 

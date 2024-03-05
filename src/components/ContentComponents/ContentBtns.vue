@@ -1,9 +1,10 @@
 <template>
-  <div class="content-btns-container">
+  <div class="content-btns-container" :class="{ 'btn-group': hasText }">
     <div class="content-btns" v-for="(item, index) in contentIcons" 
       :key="index" >
 
-      <Icon :name="item.icon"/> 
+      <Icon v-if="item.icon" :name="item.icon"/>
+      <span v-else>{{ item.text }}</span> 
     </div>
   </div>
 </template>
@@ -18,6 +19,11 @@ export default{
   },
   props: {
     contentIcons: Object
+  },
+  computed: {
+    hasText() {
+      return this.contentIcons.some(item => item.text);
+    }
   }
 }
 </script>
