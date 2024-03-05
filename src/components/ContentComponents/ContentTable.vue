@@ -1,5 +1,5 @@
 <template>
-  <table>
+  <table :class="{ secondTable: isSecond }">
     <!-- Названия колон таблицы -->
     <tr class="row">
       <th v-for="(header, index) in tableData[0]" :key="index" class="column-names">
@@ -8,9 +8,11 @@
     </tr>
 
     <!-- Элементы таблицы -->
-    <tr v-for="(row, index) in tableData.slice(1)" :key="index" class="row">
+    <tr v-for="(row, index) in tableData.slice(1)" :key="index" class="row" :class="{ isNegative: row.isNegative }">
       <td v-for="(value, key) in Object.entries(row).slice(0, -1)" :key="key" class="row-element">
-        {{ value[1] }}
+        <span>
+          {{ value[1] }}
+        </span>
       </td>
     </tr>
   </table>
@@ -20,7 +22,8 @@
 export default{
   name: "ContentTable",
   props: {
-    tableData: Array
+    tableData: Array,
+    isSecond: Boolean
   }
 }
 </script>

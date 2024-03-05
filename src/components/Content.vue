@@ -19,7 +19,7 @@
 
       <ContentTable :tableData="tableOne" />
   
-      <ContentTable :tableData="tableTwo" />
+      <ContentTable :tableData="tableTwo" :isSecond="true"/>
     </div>
 
     <div class="right-content-container">

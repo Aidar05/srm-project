@@ -128,11 +128,19 @@ table{
   background-color: white;
   border: 1px solid rgba(219, 218, 222, 1);
   border-radius: 6px;
+  padding-bottom: 5px;
 }
 
 .row{
   height: 54px;
-  border: 1px solid rgb(44, 43, 46);
+}
+
+table > *:not(:last-child) > * {
+  border-bottom: 1px solid rgba(219, 218, 222, 1);
+}
+
+.isNegative > :last-child{
+  color: rgba(234, 84, 85, 1)
 }
 
 .column-names{
@@ -140,7 +148,9 @@ table{
   font-weight: 600;
   line-height: 15px;
   letter-spacing: 1.2px;
-  color: rgba(93, 89, 108, 1)
+  color: rgba(93, 89, 108, 1);
+  text-align: left;
+  padding-left: 20px;
 }
 
 .row-element{
@@ -149,7 +159,21 @@ table{
   line-height: 27px;
   padding: 0 15px 0 15px;
   color: var(--text-color);
-  text-align: center;
+}
+
+/* Первая колонна толстая */
+.secondTable tr th:first-child,
+.secondTable tr td:first-child {
+    width: 55%;
+}
+
+/* В последней строки типа кнопочки делает все элеметы, кроме первой колонны */
+.secondTable > :last-child > :not(:first-child) span{
+  background-color: rgba(115, 103, 240, 1);
+  color: white;
+  font-size: 13px;
+  padding: 4.90px 9.80px 4.9px 9.80px;
+  border-radius: 6px;
 }
 
 /* Окошко справа */
