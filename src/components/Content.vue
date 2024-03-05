@@ -3,10 +3,18 @@
     <div class="left-content-container">
       <ContentBtns :contentIcons="contentIcons"/>
   
-      <div class="contentHeader">
-        <ContentBtns :contentIcons="buttonGroup"/>
+      <div class="content-header-container">
+        <div class="content-header-left">
+          <ContentBtns :contentIcons="buttonGroup"/>
 
-        
+          <DatePicker />
+        </div>
+
+        <div class="search-container">
+          <input class="search" type="search" placeholder="Поиск"></input>
+
+          <Icon :name="'ZoomOut'" class="search-img"/>
+        </div>
       </div>
 
       <ContentTable :tableData="tableOne" />
@@ -29,11 +37,12 @@ import Icon from './MenuComponents/Icon.vue';
 import ContentBtns from "./ContentComponents/ContentBtns.vue"
 import ContentTable from './ContentComponents/ContentTable.vue';
 import SalesMap from "./ContentComponents/SalesMap.vue"
+import DatePicker from './ContentComponents/DatePicker.vue';
 
 export default{
   name: "Content",
   components: {
-    Icon, ContentBtns, ContentTable, SalesMap
+    Icon, ContentBtns, ContentTable, SalesMap, DatePicker
   },
   data() {
     return {
